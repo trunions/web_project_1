@@ -23,13 +23,14 @@
 .logo{
     position:absolute;
     z-index:10;
+    top:30px;
+    left:64px;
 }
 
 .logo__place_header{
     background-image:url("../images/logo.png");
     background-size:contain;
-    top:30px;
-    left:64px;
+    right:100px;
     height:31px;
     width:154px;
     align-self:center;
@@ -47,6 +48,8 @@
 }
 
 .header__subtitle{
+    margin:0;
+    padding:0;
     width:388px;
     left:64px;
     line-height:25px;
@@ -65,7 +68,8 @@
     font-size:18px;
     font-weight: normal;
     position:absolute;
-    bottom:30px;
+    justify-self: baseline;
+    bottom:10px;
     text-decoration:none;
     color:#2F80ED;
 }
@@ -227,7 +231,7 @@
     overflow:hidden;
 }
 
-.section-title_theme_dark{
+.section-title__theme_dark{
     width:60%;
     margin: 0 auto 20px;
     text-align: center;
@@ -237,7 +241,7 @@
     color: #F2F2F2;
 }
 
-.section-subtitle_theme_dark{
+.section-subtitle__theme_dark{
     width: 60%;
     text-align: center;
     margin:0 auto;
@@ -247,7 +251,7 @@
     color: #F2F2F2;
 }
 
-.table_theme_dark{
+.table__theme_dark{
     display:flex;
     flex-wrap:wrap;
     position:relative;
@@ -292,7 +296,7 @@
 .footer {
   min-height:350px;
   justify-content:center;
-  background-color: #1F1F1F;
+  background-color: #000000;
   display: flex;
   margin-top:-100px;
   position:relative;
