@@ -1,4 +1,9 @@
   
+*{
+    margin:0;
+    padding:0;
+}
+
 .page {
     min-width: 1100px;
     /* we don't know how to make mobile versions of websites yet, */
@@ -9,6 +14,7 @@
     /* this ensures that all content is centered on screens wider than 1600px */
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
+
 
 .header {
     height: 100vh;
@@ -48,8 +54,6 @@
 }
 
 .header__subtitle{
-    margin:0;
-    padding:0;
     width:388px;
     left:64px;
     line-height:25px;
@@ -95,14 +99,19 @@
 
 .content{
     margin:100px auto;
+
     
+}
+
+.description{
+    margin-bottom:100px;
 }
 
 .two-columns{
     display:flex;
-    min-width:784px;
-    align-content:space-between;
-    justify-content: center;
+    width:784px;
+    align-content:center;
+    justify-content: space-between;
 }
 .two-columns__brief{
     line-height:1.2;
@@ -119,11 +128,11 @@
 
 .two-columns__paragraph{
     list-style:none;
-    margin-bottom:30px;
     line-height:34px;
     font-size: 24px;
     font-weight:normal;
 }
+
 
 .two-columns__span-accent{
     font-weight: bold;
@@ -176,6 +185,7 @@
     line-height:1.2;
     font-size:18px;
     font-weight: normal;
+    margin: 20px auto 20px auto;
 }
 .feynman{
   padding-top:100px;
