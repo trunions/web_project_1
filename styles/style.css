@@ -4,6 +4,10 @@
     padding:0;
 }
 
+:last-child{
+    margin-bottom:0px;
+}
+
 .page {
     min-width: 1100px;
     /* we don't know how to make mobile versions of websites yet, */
@@ -17,33 +21,33 @@
 
 
 .header {
+    display:flex;
     height: 100vh;
     min-height:600px;
     max-height: 756px;
-    display:flex;
     background-color: #F2F2F2;
     position: relative;
+    overflow:hidden;
+    margin-bottom:100px;
    /* parameters for the header section */
 }
 
 .logo{
-    position:absolute;
     z-index:10;
-    top:30px;
-    left:64px;
+    width:154px;
+    height:31px;
 }
 
 .logo__place_header{
-    background-image:url("../images/logo.png");
-    background-size:contain;
-    right:100px;
-    height:31px;
-    width:154px;
-    align-self:center;
+    position:absolute;
+    top:30px;
+    left:64px;
+    
 }
 
 .header__title{
-    align-self: center;
+    display:flex;
+    align-self:center;
     font-size:102px;
     width:730px;
     margin-left:64px;
@@ -66,14 +70,6 @@
 }
 
 .header__link{
-    width:388px;
-    left:64px;
-    line-height:25px;
-    font-size:18px;
-    font-weight: normal;
-    position:absolute;
-    justify-self: baseline;
-    bottom:10px;
     text-decoration:none;
     color:#2F80ED;
 }
@@ -89,6 +85,7 @@
 
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
 .header__square-pic {
+
     height: 568px;
     width: 568px;
     background-color: #2F80ED;
@@ -98,20 +95,21 @@
 }
 
 .content{
-    margin:100px auto;
+    padding:100px auto;
 
     
 }
 
 .description{
     margin-bottom:100px;
+    min-width:784px;
 }
 
 .two-columns{
     display:flex;
-    width:784px;
-    align-content:center;
-    justify-content: space-between;
+    margin:auto;
+    width: 80%;
+    justify-content:space-between;
 }
 .two-columns__brief{
     line-height:1.2;
@@ -131,6 +129,7 @@
     line-height:34px;
     font-size: 24px;
     font-weight:normal;
+    margin-bottom:30px;
 }
 
 
@@ -142,6 +141,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom:100px;
 }
 
 .section-title{
@@ -163,20 +163,22 @@
 }
 
 .table{
-    width:1100px;
-    margin: 60px auto 100px auto;
     display:flex;
-    justify-content:space-between;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+    width:1100px;
+    margin:auto;
     list-style:none;
     }
 
 .table__cell{
     width:250px;
+    margin-top:60px;
 }
 
 .table__heading{
     margin-bottom:20px;
-    line-height:1.15px;
+    line-height:1.15;
     font-size:24px;
     font-weight:bold;
 }
@@ -185,7 +187,7 @@
     line-height:1.2;
     font-size:18px;
     font-weight: normal;
-    margin: 20px auto 20px auto;
+    margin-bottom:20px;
 }
 .feynman{
   padding-top:100px;
@@ -241,7 +243,7 @@
     overflow:hidden;
 }
 
-.section-title__theme_dark{
+.section-title__theme-dark{
     width:60%;
     margin: 0 auto 20px;
     text-align: center;
@@ -251,7 +253,7 @@
     color: #F2F2F2;
 }
 
-.section-subtitle__theme_dark{
+.section-subtitle__theme-dark{
     width: 60%;
     text-align: center;
     margin:0 auto;
@@ -261,35 +263,36 @@
     color: #F2F2F2;
 }
 
-.table__theme_dark{
+.table__theme-dark{
     display:flex;
     flex-wrap:wrap;
     position:relative;
     width:1100px;
     justify-content: space-between;
-    margin:80px auto 90px;
+    margin:auto;
     z-index:2;
 }
 
-.table__cell_theme_dark {
+.table__cell_theme-dark {
     width: 200px;
     color:  #F2F2F2;
     margin-right: 0;
+    margin-top:80px;
     list-style:none;
 }
 
-.table__heading_theme_dark{
+.table__heading_theme-dark{
     line-height:1.15;
     font-size:24px;
     font-weight:bold;
-    margin:20px 0;
 }
 
-.table__text_theme_dark{
+.table__text_theme-dark{
     line-height:1.2;
     font-size:18px;
     font-weight:normal;
     justify-content:space-around;
+    margin-top:20px;
 }
 
 .kaufman__triangle{
@@ -304,57 +307,54 @@
 }
 
 .footer {
-  min-height:350px;
-  justify-content:center;
   background-color: #000000;
-  display: flex;
-  margin-top:-100px;
-  position:relative;
+  padding:1px;
  }
-
- .logo__place_footer{
-    width:183px;
-    height:35px;
-  }
 
 
 .footer__columns{
-    flex-basis:711px;
-    display:flex;
-    margin-top:60px;
-    margin-bottom:40px;
-    list-style:none;
+    min-height:350px;
     width:90%;
-    
+    margin:60px auto 40px auto;
+    display:flex;
+    flex-basis:711px;
     
 }
 
+.footer__column_content-copyright{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  flex-grow:1;
 
-
-.footer__content_copyright{
-  width:550px;
-  margin-right:275px;   
 }
+.logo__place_footer{
+    width:183px;
+    height:35px;
+    background-size:contain;
+  }
 
 .footer__author{
     line-height: 25px;
     font-size: 18px;
     font-weight: normal;
     color:#F2F2F2;
+    margin-top:18px;
     margin-bottom:18px;
-    position:absolute;
-    bottom:18px;
-    
-    
+}
 
+.footer__column_content-info{
+    padding-right:50px;
+    
+    
 }
 
 .footer__column_heading {
     line-height: 45px;
     font-size: 18px;
     font-weight: bold;
-    color: #F2F2F2;
-    display: inline-block;
+    color:#F2F2F2;
+    
 }
 
 .footer__column_links {
@@ -362,16 +362,23 @@
     font-size: 18px;
     font-weight: normal;
     color: #F2F2F2;
-    display: inline-block;
+    margin-top:20px;
+    margin-bottom:16px;
+    list-style:none;
    
 }
 
-.footer__content-social {
-    width: 250px;
+.footer__column_content-social{
+   
+    
+    
 }
 
-.footer__social-icon {
-    margin-right: 10px;
+.footer__social-icon{
+    padding-right:10px;
     width:16px;
     height:16px;
 }
+
+
+
