@@ -8,4 +8,11 @@
     margin-bottom:16px;
     list-style:none;
     text-decoration:none;
+    
+}
+
+.footer__column-links:hover{
+    opacity:.5;
+    transition:opacity .5s ease-in-out;
+    
 }
