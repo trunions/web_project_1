@@ -1,0 +1,7 @@
+.resources__logo{
+    height:38px;
+    width:270px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}

@@ -1,0 +1,11 @@
+.two-columns__paragraph{
+    list-style:none;
+    line-height:34px;
+    font-size: 24px;
+    font-weight:normal;
+    margin-bottom:30px;
+}
+
+.two-column__paragraph:last-child{
+    margin-bottom:0;
+}
