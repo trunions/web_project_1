@@ -1,22 +1,11 @@
-@keyframes rotation{
-    from{
-        transform:rotate(-15deg);
-    }
-
-    to{
-        transform:rotate(345deg);
-    }
-}
-
-
 .kaufman__triangle{
-    background-image:url("../images/triangle.svg");
-    position:absolute;
-    top:0px;
-    right:-210px;
+    background-image: url(../../../images/triangle.svg);
+    background-size: 877px 877px;
+    position: absolute;
+    top: 0px;
+    right: -210px;
     width: 877px;
     height: 877px;
-    z-index:-1;
-    animation:rotation 20s infinite;
-    
+    z-index: -1;
+    animation: rotation 20s infinite;
 }

@@ -1,3 +1,6 @@
+@import url(./logo_place_header.css);
+@import url(./logo_place_footer.css);
+
 .logo{
     z-index:10;
     width:154px;
