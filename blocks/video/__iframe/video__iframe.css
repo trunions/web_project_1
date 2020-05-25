@@ -3,3 +3,8 @@
     height:315px;
     margin-right:20px;
 }
+
+
+.video__iframe:last-child{
+    margin-right:0;
+}
