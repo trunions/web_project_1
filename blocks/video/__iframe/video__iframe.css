@@ -1,10 +1,4 @@
 .video__iframe{
     width:560px;
     height:315px;
-    margin-right:20px;
-}
-
-
-.video__iframe:last-child{
-    margin-right:0;
 }
